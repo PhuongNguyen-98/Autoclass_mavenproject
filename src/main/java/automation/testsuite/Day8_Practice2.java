@@ -18,6 +18,15 @@ public class Day8_Practice2 extends CommonBase{
 		
 		WebElement email = driver.findElement(By.name("email"));
 		System.out.println(email);
+		
+		WebElement password = driver.findElement(By.name("Password"));
+		System.out.println(password);
+		
+		WebElement company = driver.findElement(By.name("company"));
+		System.out.println(company);
+		
+		WebElement mobileNumber = driver.findElement(By.name("mobile number"));
+		System.out.println(mobileNumber);
 	}
 
 }
