@@ -30,6 +30,9 @@ public class Day12_BTVN_dropdownlist extends CommonBase {
 		dropdownCountry.selectByValue("VNM");
 		assertEquals(dropdownCountry.getFirstSelectedOption().getText(), "Viet Nam");
 		
+		dropdownCountry.selectByVisibleText("Switzerland");
+		assertEquals(dropdownCountry.getFirstSelectedOption().getText(), "Switzerland");
+		
 	}
 	
 	@AfterMethod
