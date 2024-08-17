@@ -33,5 +33,7 @@ public class Day8_Practice extends CommonBase {
 		
 		WebElement buttonDangKy = driver.findElement(By.tagName("button"));
 		System.out.println(buttonDangKy);
+		
+		WebElement txtHoVaTen2 = driver.findElement(By.xpath("//input[@placeholder='Nhập họ và tên']"));
 	}
 }

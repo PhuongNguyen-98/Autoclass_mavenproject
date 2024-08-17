@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Day8_Practice">
+      <class name="automation.testsuite.Day12_radioButton">
         <methods>
-          <include name="openBrowser"/>
-          <include name="getElementByID"/>
+          <include name="openChrome"/>
+          <include name="case2_CheckRadioSuccessfully"/>
         </methods>
-      </class> <!-- automation.testsuite.Day8_Practice -->
+      </class> <!-- automation.testsuite.Day12_radioButton -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
