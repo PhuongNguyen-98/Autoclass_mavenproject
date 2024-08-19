@@ -3,6 +3,7 @@ package automation.testsuite;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -35,11 +36,21 @@ public class Day12_BTVN_dropdownlist extends CommonBase {
 		
 	}
 	
-	@AfterMethod
-	public void closeBrowser()
-	{
-		driver.close();
+	@Test
+	public void case2_fillSearchField() {
+		WebElement search = driver.findElement(By.id("s"));
+		search.sendKeys("Moe test");
+//		search.clear();
+		
+		WebElement buttonSearch = driver.findElement(By.xpath("//button[@class='button_search']"));
+		buttonSearch.click();
 	}
+	
+//	@AfterMethod
+//	public void closeBrowser()
+//	{
+//		driver.close();
+//	}
 	
 
 }
