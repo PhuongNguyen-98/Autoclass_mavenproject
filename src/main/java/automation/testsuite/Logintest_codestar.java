@@ -15,16 +15,16 @@ public class Logintest_codestar extends CommonBase {
 	
 	@BeforeMethod
 	
-	public void openChrome() {
-		driver = initChromeDriver(CT_PageURLs.URL_CRMSTAR);
+	public void openFirefox() {
+		driver = initFirefoxDriver(CT_PageURLs.URL_CRMSTAR);
 	}
 	
 	@Test
 	public void loginSuccessfully()
 	{
-		LoginPage login = new LoginPage(driver);
+		Loginpage_BTVN login = new Loginpage_BTVN(driver);
 		login.LoginFunction("admin@gmail.com","12345678");
-		assertTrue(driver.findElement(By.xpath("(//p[text()='Quản lý người dùng']")).isDisplayed());
+		assertTrue(driver.findElement(By.xpath("//p[text()='Quản lý người dùng']")).isDisplayed());
 	}
 
 }
