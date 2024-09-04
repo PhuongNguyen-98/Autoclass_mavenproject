@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.LogoutestFactory">
+      <class name="automation.testsuite.SearchJsTest">
         <methods>
-          <include name="logoutSuccessfully"/>
-          <include name="openFirefox"/>
+          <include name="openChrome"/>
+          <include name="searchkeyword"/>
+          <include name="signinSuccessfully"/>
         </methods>
-      </class> <!-- automation.testsuite.LogoutestFactory -->
+      </class> <!-- automation.testsuite.SearchJsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
