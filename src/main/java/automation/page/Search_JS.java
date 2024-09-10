@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 
@@ -28,7 +29,8 @@ public class Search_JS {
 	@FindBy(id = "ConfirmNewPassword") WebElement txtConfirmNewPass;
 	@FindBy(id = "onesignal-slidedown-cancel-button") WebElement cancelButton;
 	@FindBy(xpath = "//input[@class='btn btn-primary']") WebElement updatePassBtn;
-	@FindBy(xpath = "//span[@class='input-group-btn']") WebElement btnSearch;
+	@FindBy(xpath = "//button[@class='button-search btn btn-primary']") WebElement btnSearch;
+	@FindBy(xpath = "//input[@class='autosearch-input form-control']") WebElement searchField;
 	
 	public Search_JS(WebDriver _driver) {
 		this.driver = _driver;
@@ -50,11 +52,15 @@ public class Search_JS {
 //		js.executeScript("arguments[0].click();", btnCSignin);
 	}
 	
-	public void SearchFunction () {
+	public void SearchFunction () throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("document.getElementByXPath('//input[@class='autosearch-input form-control']').setAttribute('value','ASP net');");
 		js.executeScript("arguments[0].click();", btnSearch);
-		
+//		Thread.sleep(3000);
+//		driver.findElement(By.xpath("//button[@id='onesignal-slidedown-cancel-button']")).click();
+//		searchField.sendKeys("ASP net");
+//		btnSearch.click();
+//		
 	}
 
 }

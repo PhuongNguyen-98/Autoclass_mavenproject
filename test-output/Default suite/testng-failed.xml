@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.SearchJsTest">
+      <class name="automation.testsuite.BTVN2_Day16">
         <methods>
           <include name="openChrome"/>
-          <include name="searchkeyword"/>
-          <include name="signinSuccessfully"/>
+          <include name="closeBrowser"/>
+          <include name="verifyAlertMessage"/>
         </methods>
-      </class> <!-- automation.testsuite.SearchJsTest -->
+      </class> <!-- automation.testsuite.BTVN2_Day16 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

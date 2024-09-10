@@ -1,5 +1,8 @@
 package automation.testsuite;
 
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -22,9 +25,10 @@ public class SearchJsTest extends CommonBase {
 //		
 //	}
 	@Test
-	public void searchkeyword() {
+	public void searchkeyword() throws InterruptedException {
 		Search_JS search = new Search_JS(driver);
 		search.SearchFunction();
+		assertTrue(driver.findElement(By.xpath("//a[text()='Bài 52: Gửi phản hồi và gửi mail trong ASP NET sử dụng SMTP']")).isDisplayed());
 	}
 	
 }
