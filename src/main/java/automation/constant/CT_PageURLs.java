@@ -13,5 +13,13 @@ public class CT_PageURLs {
 	public static String URL_ALADALOGIN = "https://alada.vn/tai-khoan/dang-nhap.html";
 	public static String URL_SELENIUMPRACTISE = "https://seleniumpractise.blogspot.com/2019/01/alert-demo.html";
 	public static String URL_GURU99_DELETECUSTOMER = "https://demo.guru99.com/test/delete_customer.php";
-	
+	public static String URL_GURU99_3 = "https://demo.guru99.com/popup.php";
+	public static String URL_CODESTAR = "https://codestar.vn/";
+	public static String URL_MEDIAMART = "https://mediamart.vn/";
+//	public static String URL_ = "";
+//	public static String URL_ = "";
+//	public static String URL_ = "";
+//	public static String URL_ = "";
+//	public static String URL_ = "";
+//	public static String URL_ = "";
 }
