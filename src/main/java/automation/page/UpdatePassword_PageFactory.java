@@ -1,5 +1,6 @@
 package automation.page;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,24 +33,36 @@ public class UpdatePassword_PageFactory {
 	}
 	
 	public void UpdatePassword(String oldPass, String newPass) {
-		try {
-			while ( cancelButton.isDisplayed()) {
-				cancelButton.click();
-			}
-			
-		}catch (Exception ex) {
-			// TODO: handle exception
-		
-		//cancelButton.click();
-		//JavascriptExecutor js = (JavascriptExecutor) driver;
-		//js.executeScript("arguments[0].click();", btnAvatar);
-		btnAvatar.click();
-		btnUpdatePass.click();
-		txtOldPass.sendKeys(oldPass);
-		txtNewPass.sendKeys(newPass);
-		txtConfirmNewPass.sendKeys(newPass);
-		updatePassBtn.click();
-		}
+//		try {
+//			
+//			boolean isButtonDisplay = cancelButton.isDisplayed();
+//			if (isButtonDisplay) {
+//				cancelButton.click();
+//			}
+//			while ( true) {
+//
+//				
+//				btnAvatar.click();
+//				btnUpdatePass.click();
+//				txtOldPass.sendKeys(oldPass);
+//				txtNewPass.sendKeys(newPass);
+//				txtConfirmNewPass.sendKeys(newPass);
+//				updatePassBtn.click();
+//			}
+//			
+//	}catch (Exception ex) {
+//			// TODO: handle exception
+//		
+//		//cancelButton.click();
+//		//JavascriptExecutor js = (JavascriptExecutor) driver;
+//		//js.executeScript("arguments[0].click();", btnAvatar);
+			btnAvatar.click();
+			btnUpdatePass.click();
+			txtOldPass.sendKeys(oldPass);
+			txtNewPass.sendKeys(newPass);
+			txtConfirmNewPass.sendKeys(newPass);
+			updatePassBtn.click();
+//		}
 	}
 
 }

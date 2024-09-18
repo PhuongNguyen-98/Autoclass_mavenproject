@@ -16,8 +16,8 @@ public class CT_PageURLs {
 	public static String URL_GURU99_3 = "https://demo.guru99.com/popup.php";
 	public static String URL_CODESTAR = "https://codestar.vn/";
 	public static String URL_MEDIAMART = "https://mediamart.vn/";
-//	public static String URL_ = "";
-//	public static String URL_ = "";
+	public static String URL_DIENMAYNHAPKHAU = "https://dienmaynhapkhaugiare.com.vn/";
+	public static String URL_BEPANTOAN = "https://bepantoan.vn/";
 //	public static String URL_ = "";
 //	public static String URL_ = "";
 //	public static String URL_ = "";

@@ -3,7 +3,10 @@ package automation.testsuite;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automation.common.CommonBase;
@@ -17,8 +20,12 @@ public class LogoutestFactory extends CommonBase {
 	LogoutPageFactory logoutFactory;
 	
 	@BeforeMethod
-	public void openFirefox() {
-		driver = initFirefoxDriver(CT_PageURLs.URL_CRMSTAR);
+	@Parameters("browser")
+	public void openChrome(@Optional("firefox") String browser)
+	{
+		setupDriver(browser);
+		driver.get(CT_PageURLs.URL_CRMSTAR);
+		//driver = initFirefoxDriver(CT_PageURLs.URL_CRMSTAR);
 	}
 	
 	@Test
@@ -31,5 +38,9 @@ public class LogoutestFactory extends CommonBase {
 		assertTrue(driver.findElement(By.xpath("//h4[text()='Đăng nhập']")).isDisplayed());
 		
 	}
-
+	
+	@AfterMethod
+	public void closeChrome() {
+		driver.close();
+	}
 }

@@ -13,13 +13,13 @@ import automation.common.CommonBase;
 import automation.constant.CT_PageURLs;
 
 public class Day17_WindowsPopup extends CommonBase {
-	
+
 	@BeforeMethod
 	public void openChrome()
 	{
 		driver = initChromeDriver(CT_PageURLs.URL_GURU99_3);
 	}
-	
+
 	@Test
 	public void handleWindow() {
 		click(By.xpath("//a[text()='Click Here']"));
@@ -38,6 +38,6 @@ public class Day17_WindowsPopup extends CommonBase {
 		}
 		driver.switchTo().window(mainWindow);
 		assertTrue(isElementVisibility(By.xpath("//a[text()='Click Here']")));
-		
+
 	}
 }
