@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.BTVN2_Day18">
+      <class name="automation.testsuite.BAT_NewsTest">
         <methods>
-          <include name="verifyMessageChatFunction"/>
+          <include name="verifyNewsPage2"/>
           <include name="openDriver"/>
         </methods>
-      </class> <!-- automation.testsuite.BTVN2_Day18 -->
+      </class> <!-- automation.testsuite.BAT_NewsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

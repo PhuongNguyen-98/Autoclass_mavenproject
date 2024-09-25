@@ -18,7 +18,7 @@ public class CT_PageURLs {
 	public static String URL_MEDIAMART = "https://mediamart.vn/";
 	public static String URL_DIENMAYNHAPKHAU = "https://dienmaynhapkhaugiare.com.vn/";
 	public static String URL_BEPANTOAN = "https://bepantoan.vn/";
-//	public static String URL_ = "";
+	public static String URL_BATSUPPORTPAGE = "https://bepantoan.vn/chinh-sach/chinh-sach-van-chuyen";
 //	public static String URL_ = "";
 //	public static String URL_ = "";
 //	public static String URL_ = "";

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-18T14:47:32 ICT" name="TestSuite" finished-at="2024-09-18T14:49:23 ICT" duration-ms="110772">
+  <suite started-at="2024-09-25T18:48:16 ICT" name="Default suite" finished-at="2024-09-25T18:48:32 ICT" duration-ms="15648">
     <groups>
     </groups>
-    <test started-at="2024-09-18T14:47:32 ICT" name="Regression test test suite on chrome" finished-at="2024-09-18T14:48:01 ICT" duration-ms="29179">
-      <class name="automation.testsuite.BTVN2_Day18">
-        <test-method is-config="true" signature="openDriver(java.lang.String)[pri:0, instance:automation.testsuite.BTVN2_Day18@2d901eb0]" started-at="2024-09-18T14:47:47 ICT" name="openDriver" finished-at="2024-09-18T14:47:56 ICT" duration-ms="9089" status="PASS">
+    <test started-at="2024-09-25T18:48:16 ICT" name="Default test" finished-at="2024-09-25T18:48:32 ICT" duration-ms="15648">
+      <class name="automation.testsuite.BAT_NewsTest">
+        <test-method is-config="true" signature="openDriver(java.lang.String)[pri:0, instance:automation.testsuite.BAT_NewsTest@78e4deb0]" started-at="2024-09-25T18:48:16 ICT" name="openDriver" finished-at="2024-09-25T18:48:27 ICT" duration-ms="10407" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,124 +18,80 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openDriver -->
-        <test-method signature="verifyMessageChatFunction()[pri:0, instance:automation.testsuite.BTVN2_Day18@2d901eb0]" started-at="2024-09-18T14:47:56 ICT" name="verifyMessageChatFunction" finished-at="2024-09-18T14:48:01 ICT" duration-ms="4586" status="PASS">
+        <test-method signature="verifyNewsPage2()[pri:0, instance:automation.testsuite.BAT_NewsTest@78e4deb0]" started-at="2024-09-25T18:48:27 ICT" name="verifyNewsPage2" finished-at="2024-09-25T18:48:32 ICT" duration-ms="5160" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a data-v-54ae511a="" href="javascript:;" class="font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500">...</a> is not clickable at point (773, 16). Other element would receive the click: <div class="bg-[#FFA800] w-[42px] h-[42px] rounded-r flex items-center justify-center cursor-pointer" data-v-79819f40="">...</div>
+  (Session info: chrome=129.0.6668.70)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d83194de76f32cf6def476eb647aa011, clickElement {id=f.D5AAEDA53A31568BB27EBCCFDA969F3D.d.E42630CA07BFE7D944937B2AC226C9C2.e.11364}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56939/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d83194de76f32cf6def476eb647aa011)] -> xpath: (//a[@class='font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500'])[1]]
+Session ID: d83194de76f32cf6def476eb647aa011]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a data-v-54ae511a="" href="javascript:;" class="font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500">...</a> is not clickable at point (773, 16). Other element would receive the click: <div class="bg-[#FFA800] w-[42px] h-[42px] rounded-r flex items-center justify-center cursor-pointer" data-v-79819f40="">...</div>
+  (Session info: chrome=129.0.6668.70)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d83194de76f32cf6def476eb647aa011, clickElement {id=f.D5AAEDA53A31568BB27EBCCFDA969F3D.d.E42630CA07BFE7D944937B2AC226C9C2.e.11364}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56939/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d83194de76f32cf6def476eb647aa011)] -> xpath: (//a[@class='font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500'])[1]]
+Session ID: d83194de76f32cf6def476eb647aa011
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at automation.page.BAT_News.page2(BAT_News.java:101)
+at automation.testsuite.BAT_NewsTest.verifyNewsPage2(BAT_NewsTest.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMessageChatFunction -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:automation.testsuite.BTVN2_Day18@2d901eb0]" started-at="2024-09-18T14:48:01 ICT" name="closeDriver" finished-at="2024-09-18T14:48:01 ICT" duration-ms="496" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- automation.testsuite.BTVN2_Day18 -->
-      <class name="automation.testsuite.BTVN1_Day18">
-        <test-method is-config="true" signature="openDriver(java.lang.String)[pri:0, instance:automation.testsuite.BTVN1_Day18@1530c739]" started-at="2024-09-18T14:47:32 ICT" name="openDriver" finished-at="2024-09-18T14:47:37 ICT" duration-ms="4734" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openDriver -->
-        <test-method signature="verifyZaloChatFunction()[pri:0, instance:automation.testsuite.BTVN1_Day18@1530c739]" started-at="2024-09-18T14:47:37 ICT" name="verifyZaloChatFunction" finished-at="2024-09-18T14:47:46 ICT" duration-ms="9763" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyZaloChatFunction -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:automation.testsuite.BTVN1_Day18@1530c739]" started-at="2024-09-18T14:47:46 ICT" name="closeDriver" finished-at="2024-09-18T14:47:47 ICT" duration-ms="418" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- automation.testsuite.BTVN1_Day18 -->
-    </test> <!-- Regression test test suite on chrome -->
-    <test started-at="2024-09-18T14:48:01 ICT" name="Regression test test suite on firefox" finished-at="2024-09-18T14:48:47 ICT" duration-ms="45794">
-      <class name="automation.testsuite.BTVN2_Day18">
-        <test-method is-config="true" signature="openDriver(java.lang.String)[pri:0, instance:automation.testsuite.BTVN2_Day18@6be968ce]" started-at="2024-09-18T14:48:27 ICT" name="openDriver" finished-at="2024-09-18T14:48:41 ICT" duration-ms="13924" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openDriver -->
-        <test-method signature="verifyMessageChatFunction()[pri:0, instance:automation.testsuite.BTVN2_Day18@6be968ce]" started-at="2024-09-18T14:48:41 ICT" name="verifyMessageChatFunction" finished-at="2024-09-18T14:48:45 ICT" duration-ms="4050" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMessageChatFunction -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:automation.testsuite.BTVN2_Day18@6be968ce]" started-at="2024-09-18T14:48:45 ICT" name="closeDriver" finished-at="2024-09-18T14:48:47 ICT" duration-ms="1945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- automation.testsuite.BTVN2_Day18 -->
-      <class name="automation.testsuite.BTVN1_Day18">
-        <test-method is-config="true" signature="openDriver(java.lang.String)[pri:0, instance:automation.testsuite.BTVN1_Day18@7188af83]" started-at="2024-09-18T14:48:01 ICT" name="openDriver" finished-at="2024-09-18T14:48:21 ICT" duration-ms="19536" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openDriver -->
-        <test-method signature="verifyZaloChatFunction()[pri:0, instance:automation.testsuite.BTVN1_Day18@7188af83]" started-at="2024-09-18T14:48:21 ICT" name="verifyZaloChatFunction" finished-at="2024-09-18T14:48:25 ICT" duration-ms="3834" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyZaloChatFunction -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:automation.testsuite.BTVN1_Day18@7188af83]" started-at="2024-09-18T14:48:25 ICT" name="closeDriver" finished-at="2024-09-18T14:48:27 ICT" duration-ms="2482" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- automation.testsuite.BTVN1_Day18 -->
-    </test> <!-- Regression test test suite on firefox -->
-    <test started-at="2024-09-18T14:48:47 ICT" name="Regression test test suite on edge" finished-at="2024-09-18T14:49:23 ICT" duration-ms="35555">
-      <class name="automation.testsuite.BTVN2_Day18">
-        <test-method is-config="true" signature="openDriver(java.lang.String)[pri:0, instance:automation.testsuite.BTVN2_Day18@4a003cbe]" started-at="2024-09-18T14:49:07 ICT" name="openDriver" finished-at="2024-09-18T14:49:17 ICT" duration-ms="10387" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openDriver -->
-        <test-method signature="verifyMessageChatFunction()[pri:0, instance:automation.testsuite.BTVN2_Day18@4a003cbe]" started-at="2024-09-18T14:49:17 ICT" name="verifyMessageChatFunction" finished-at="2024-09-18T14:49:22 ICT" duration-ms="4969" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMessageChatFunction -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:automation.testsuite.BTVN2_Day18@4a003cbe]" started-at="2024-09-18T14:49:22 ICT" name="closeDriver" finished-at="2024-09-18T14:49:23 ICT" duration-ms="755" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- automation.testsuite.BTVN2_Day18 -->
-      <class name="automation.testsuite.BTVN1_Day18">
-        <test-method is-config="true" signature="openDriver(java.lang.String)[pri:0, instance:automation.testsuite.BTVN1_Day18@76494737]" started-at="2024-09-18T14:48:47 ICT" name="openDriver" finished-at="2024-09-18T14:49:01 ICT" duration-ms="13928" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openDriver -->
-        <test-method signature="verifyZaloChatFunction()[pri:0, instance:automation.testsuite.BTVN1_Day18@76494737]" started-at="2024-09-18T14:49:01 ICT" name="verifyZaloChatFunction" finished-at="2024-09-18T14:49:05 ICT" duration-ms="4467" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyZaloChatFunction -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:automation.testsuite.BTVN1_Day18@76494737]" started-at="2024-09-18T14:49:05 ICT" name="closeDriver" finished-at="2024-09-18T14:49:07 ICT" duration-ms="1025" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- automation.testsuite.BTVN1_Day18 -->
-    </test> <!-- Regression test test suite on edge -->
-  </suite> <!-- TestSuite -->
+        </test-method> <!-- verifyNewsPage2 -->
+      </class> <!-- automation.testsuite.BAT_NewsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
