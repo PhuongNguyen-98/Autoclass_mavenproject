@@ -7,6 +7,7 @@ import java.util.Set;
 
 import javax.xml.xpath.XPath;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -238,16 +239,23 @@ public class BAT_FooterTest extends CommonBase {
 		footer = new BAT_Footer(driver);
 		scrollToElement(By.xpath("//p[text()='© 2021 Công ty TNHH Bếp An Toàn']"));
 		footer.ContactMuahang();
-		waitAlertPresent();
-		String alertMessage = driver.switchTo().alert().getText();
+		pause(3000);
+//		waitAlertPresent();
+//		String alertMessage = driver.switchTo().activeElement().getText();
+//		
+//		System.out.println(alertMessage);
+		
+		Alert alert = driver.switchTo().alert();
+		
+		String alertMessage = alert.getText();
 		assertEquals(alertMessage, "https://bepantoan.vn wants to open this application.");
 	}
 	
 	
 	
-	@AfterMethod
-	public void closeDriver() {
-		driver.close();
-	}
+//	@AfterMethod
+//	public void closeDriver() {
+//		driver.close();
+//	}
 
 }

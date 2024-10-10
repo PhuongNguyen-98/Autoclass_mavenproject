@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
+<testng-results ignored="19" total="20" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-25T18:48:16 ICT" name="Default suite" finished-at="2024-09-25T18:48:32 ICT" duration-ms="15648">
+  <suite started-at="2024-10-02T11:58:50 ICT" name="Default suite" finished-at="2024-10-02T11:59:10 ICT" duration-ms="19191">
     <groups>
     </groups>
-    <test started-at="2024-09-25T18:48:16 ICT" name="Default test" finished-at="2024-09-25T18:48:32 ICT" duration-ms="15648">
-      <class name="automation.testsuite.BAT_NewsTest">
-        <test-method is-config="true" signature="openDriver(java.lang.String)[pri:0, instance:automation.testsuite.BAT_NewsTest@78e4deb0]" started-at="2024-09-25T18:48:16 ICT" name="openDriver" finished-at="2024-09-25T18:48:27 ICT" duration-ms="10407" status="PASS">
+    <test started-at="2024-10-02T11:58:50 ICT" name="Default test" finished-at="2024-10-02T11:59:10 ICT" duration-ms="19191">
+      <class name="automation.testsuite.BAT_FooterTest">
+        <test-method is-config="true" signature="openDriver(java.lang.String)[pri:0, instance:automation.testsuite.BAT_FooterTest@2af004b]" started-at="2024-10-02T11:58:50 ICT" name="openDriver" finished-at="2024-10-02T11:59:05 ICT" duration-ms="14617" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,29 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openDriver -->
-        <test-method signature="verifyNewsPage2()[pri:0, instance:automation.testsuite.BAT_NewsTest@78e4deb0]" started-at="2024-09-25T18:48:27 ICT" name="verifyNewsPage2" finished-at="2024-09-25T18:48:32 ICT" duration-ms="5160" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="verifyContactMuahang()[pri:20, instance:automation.testsuite.BAT_FooterTest@2af004b]" started-at="2024-10-02T11:59:05 ICT" name="verifyContactMuahang" finished-at="2024-10-02T11:59:09 ICT" duration-ms="4461" status="FAIL">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
             <message>
-              <![CDATA[element click intercepted: Element <a data-v-54ae511a="" href="javascript:;" class="font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500">...</a> is not clickable at point (773, 16). Other element would receive the click: <div class="bg-[#FFA800] w-[42px] h-[42px] rounded-r flex items-center justify-center cursor-pointer" data-v-79819f40="">...</div>
-  (Session info: chrome=129.0.6668.70)
+              <![CDATA[no such alert
+  (Session info: chrome=129.0.6668.72)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d83194de76f32cf6def476eb647aa011, clickElement {id=f.D5AAEDA53A31568BB27EBCCFDA969F3D.d.E42630CA07BFE7D944937B2AC226C9C2.e.11364}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56939/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d83194de76f32cf6def476eb647aa011)] -> xpath: (//a[@class='font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500'])[1]]
-Session ID: d83194de76f32cf6def476eb647aa011]]>
+Command: [2796f4d9f115fb6d2754cd65e2280ab6, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60332/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2796f4d9f115fb6d2754cd65e2280ab6]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a data-v-54ae511a="" href="javascript:;" class="font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500">...</a> is not clickable at point (773, 16). Other element would receive the click: <div class="bg-[#FFA800] w-[42px] h-[42px] rounded-r flex items-center justify-center cursor-pointer" data-v-79819f40="">...</div>
-  (Session info: chrome=129.0.6668.70)
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=129.0.6668.72)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d83194de76f32cf6def476eb647aa011, clickElement {id=f.D5AAEDA53A31568BB27EBCCFDA969F3D.d.E42630CA07BFE7D944937B2AC226C9C2.e.11364}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56939/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d83194de76f32cf6def476eb647aa011)] -> xpath: (//a[@class='font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500'])[1]]
-Session ID: d83194de76f32cf6def476eb647aa011
+Command: [2796f4d9f115fb6d2754cd65e2280ab6, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60332/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2796f4d9f115fb6d2754cd65e2280ab6
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -51,14 +49,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at automation.page.BAT_News.page2(BAT_News.java:101)
-at automation.testsuite.BAT_NewsTest.verifyNewsPage2(BAT_NewsTest.java:64)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1107)
+at automation.testsuite.BAT_FooterTest.verifyContactMuahang(BAT_FooterTest.java:248)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -87,11 +81,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyNewsPage2 -->
-      </class> <!-- automation.testsuite.BAT_NewsTest -->
+        </test-method> <!-- verifyContactMuahang -->
+      </class> <!-- automation.testsuite.BAT_FooterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

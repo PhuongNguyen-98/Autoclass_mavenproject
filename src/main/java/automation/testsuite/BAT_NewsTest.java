@@ -49,6 +49,7 @@ public class BAT_NewsTest extends CommonBase{
 		for (int i = 0; i < cloneDatesString.length; i++) {
 			if(cloneDatesString[i] != originDatesString[i]) {
 				isTrue = false;
+				break;
 			}
 		}
 		assertEquals(isTrue, true);
@@ -59,10 +60,37 @@ public class BAT_NewsTest extends CommonBase{
 	public void verifyNewsPage2() {
 		bat_news = new BAT_News(driver);
 		bat_news.navigateToNewsPage();
+		pause(5000);
+		scrollToElement(By.xpath("//a[text()='Bếp từ Kainer chính hãng, giá rẻ, bảo hành dài lâu mua ở đâu?']"));
 		pause(3000);
-		scrollToElement(By.xpath("//h2[text()='Hệ thống showroom']"));
 		bat_news.page2();
 		assertTrue(driver.getCurrentUrl().contains("page=2"));
+	}
+	
+	
+	@Test
+	public void verifyNextPage() {
+		bat_news = new BAT_News(driver);
+		bat_news.navigateToNewsPage();
+		pause(5000);
+		scrollToElement(By.xpath("//a[text()='Bếp từ Kainer chính hãng, giá rẻ, bảo hành dài lâu mua ở đâu?']"));
+		pause(3000);
+		bat_news.nextPage();
+		assertTrue(driver.getCurrentUrl().contains("page=2"));
+	}
+	
+	@Test
+	public void verifyPreviousPage() {
+		bat_news = new BAT_News(driver);
+		bat_news.navigateToNewsPage();
+		pause(5000);
+		scrollToElement(By.xpath("//a[text()='Bếp từ Kainer chính hãng, giá rẻ, bảo hành dài lâu mua ở đâu?']"));
+		pause(3000);
+		bat_news.page2();
+		scrollToElement(By.xpath("//a[text()='Bếp từ Kainer chính hãng, giá rẻ, bảo hành dài lâu mua ở đâu?']"));
+		pause(3000);
+		bat_news.priviousPage();
+		assertTrue(driver.getCurrentUrl().contains("page=1"));
 	}
 	
 	

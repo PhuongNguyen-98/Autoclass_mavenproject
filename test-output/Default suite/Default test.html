@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 25 18:48:16 ICT 2024</td>
+<td>Started on:</td><td>Wed Oct 02 11:58:50 ICT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15648 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19191 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automation.testsuite.BAT_NewsTest.verifyNewsPage2()'><b>verifyNewsPage2</b><br>Test class: automation.testsuite.BAT_NewsTest</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-v-54ae511a=&quot;&quot; href=&quot;javascript:;&quot; class=&quot;font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500&quot;&gt;...&lt;/a&gt; is not clickable at point (773, 16). Other element would receive the click: &lt;div class=&quot;bg-[#FFA800] w-[42px] h-[42px] rounded-r flex items-center justify-center cursor-pointer&quot; data-v-79819f40=&quot;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=129.0.6668.70)
+<td title='automation.testsuite.BAT_FooterTest.verifyContactMuahang()'><b>verifyContactMuahang</b><br>Test class: automation.testsuite.BAT_FooterTest</td>
+<td><div><pre>org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=129.0.6668.72)
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d83194de76f32cf6def476eb647aa011, clickElement {id=f.D5AAEDA53A31568BB27EBCCFDA969F3D.d.E42630CA07BFE7D944937B2AC226C9C2.e.11364}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56939/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d83194de76f32cf6def476eb647aa011)] -&gt; xpath: (//a[@class=&apos;font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500&apos;])[1]]
-Session ID: d83194de76f32cf6def476eb647aa011
+Command: [2796f4d9f115fb6d2754cd65e2280ab6, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60332/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2796f4d9f115fb6d2754cd65e2280ab6
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -95,14 +94,10 @@ Session ID: d83194de76f32cf6def476eb647aa011
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at automation.page.BAT_News.page2(BAT_News.java:101)
-	at automation.testsuite.BAT_NewsTest.verifyNewsPage2(BAT_NewsTest.java:64)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1107)
+	at automation.testsuite.BAT_FooterTest.verifyContactMuahang(BAT_FooterTest.java:248)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -129,16 +124,15 @@ Session ID: d83194de76f32cf6def476eb647aa011
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1901700557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1901700557'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-v-54ae511a=&quot;&quot; href=&quot;javascript:;&quot; class=&quot;font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500&quot;&gt;...&lt;/a&gt; is not clickable at point (773, 16). Other element would receive the click: &lt;div class=&quot;bg-[#FFA800] w-[42px] h-[42px] rounded-r flex items-center justify-center cursor-pointer&quot; data-v-79819f40=&quot;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=129.0.6668.70)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1920321355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1920321355'><pre>org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=129.0.6668.72)
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d83194de76f32cf6def476eb647aa011, clickElement {id=f.D5AAEDA53A31568BB27EBCCFDA969F3D.d.E42630CA07BFE7D944937B2AC226C9C2.e.11364}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56939/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d83194de76f32cf6def476eb647aa011)] -&gt; xpath: (//a[@class=&apos;font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500&apos;])[1]]
-Session ID: d83194de76f32cf6def476eb647aa011
+Command: [2796f4d9f115fb6d2754cd65e2280ab6, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60332/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2796f4d9f115fb6d2754cd65e2280ab6
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -149,14 +143,10 @@ Session ID: d83194de76f32cf6def476eb647aa011
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at automation.page.BAT_News.page2(BAT_News.java:101)
-	at automation.testsuite.BAT_NewsTest.verifyNewsPage2(BAT_NewsTest.java:64)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1107)
+	at automation.testsuite.BAT_FooterTest.verifyContactMuahang(BAT_FooterTest.java:248)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -184,8 +174,8 @@ Session ID: d83194de76f32cf6def476eb647aa011
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>5</td>
-<td>automation.testsuite.BAT_NewsTest@78e4deb0</td></tr>
+<td>4</td>
+<td>automation.testsuite.BAT_FooterTest@2af004b</td></tr>
 </table><p>
 </body>
 </html>

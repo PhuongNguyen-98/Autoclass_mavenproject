@@ -14,24 +14,24 @@ import org.openqa.selenium.support.PageFactory;
 import automation.common.CommonBase;
 
 public class BAT_News extends CommonBase {
-		
+
 	private WebDriver driver;
 	@FindBy(xpath = "(//a[normalize-space()='Tin tức'])[1]") WebElement btnNews;
-	@FindBy(xpath = "(//a[@class='font-medium leading-7 xs:leading-8 transition-all duration-200 ease-in-out text-center mx-1.5 text-sm text-grey-500 bg-grey-100 rounded-full w-7 h-7 xs:w-8 xs:h-8 hover:text-white hover:bg-maroon-500'])[1]") WebElement page2;
+	@FindBy(xpath = "//a[normalize-space()='2']") WebElement page2;
 	@FindBy(xpath = "//a[@aria-label='Next']") WebElement btn_next;
 	@FindBy(xpath = "//a[@aria-label='Previous']") WebElement btn_privious;
-	
+
 	public BAT_News(WebDriver _driver) {
 		this.driver = _driver;
 		PageFactory.initElements(_driver, this);
 	}
-	
+
 	public void navigateToNewsPage() {
-//		String xpath = "(//a[normalize-space()='title'])[1]".replace("title", title);
-//		WebElement btnElement = driver.findElement(By.xpath(xpath));
+		//		String xpath = "(//a[normalize-space()='title'])[1]".replace("title", title);
+		//		WebElement btnElement = driver.findElement(By.xpath(xpath));
 		btnNews.click();
 	}
-	
+
 	public String[] getDatesFromNews() {
 		String xpath = "//div[@class='absolute bottom-[4px] right-[8px] text-[16px] text-gray-800 py-[4px] px-[4px] md:px-[12px] bg-gray-100 rounded-sm w-max h-style card__datetime']";
 		List<WebElement> allNewsElement = driver.findElements(By.xpath(xpath));
@@ -39,19 +39,25 @@ public class BAT_News extends CommonBase {
 		for (int i = 0; i < datesNews.length; i++) {
 			datesNews[i] = allNewsElement.get(i).getText();
 		} 
-	
+
 		return datesNews;
 	}
-	
+
 	public int compareTwoDateString(String d1, String d2) {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		try {
+
+			//			Date date1 = sdf.parse(d1);
+			//			Date date2 = sdf.parse(d1);
+			//			
+			//			return date1.compareTo(date2);
+
 			return sdf.parse(d1).compareTo(sdf.parse(d2));
 		} catch (ParseException e) {
-			 throw new IllegalArgumentException(e);
+			throw new IllegalArgumentException(e);
 		}
 	}
-	
+
 	public String[] sortDatesStringArray(String[] dates) {
 		String[] cloneArray = Arrays.copyOf(dates, dates.length);
 		String temp = "";
@@ -65,10 +71,10 @@ public class BAT_News extends CommonBase {
 
 			}
 		}
-		
+
 		return cloneArray;
 	}
-	
+
 	public void listNews()  {
 		String xpath = "//div[@class='absolute bottom-[4px] right-[8px] text-[16px] text-gray-800 py-[4px] px-[4px] md:px-[12px] bg-gray-100 rounded-sm w-max h-style card__datetime']";
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -96,17 +102,17 @@ public class BAT_News extends CommonBase {
 		}
 		String a = "";
 	}
-	
+
 	public void page2() {
 		page2.click();
 	}
-	
+
 	public void nextPage() {
 		btn_next.click();
 	}
-	
+
 	public void priviousPage() {
 		btn_privious.click();
 	}
-	
+
 }
